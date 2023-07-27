@@ -18,73 +18,151 @@
   <body>
 
     <!-- navbar -->
-<header id="site-header">
+    <header id="site-header">
 
-    <nav class="navbar bg-body-tertiary py-3">
-        <div class="container-fluid bg-white">
+        <nav class="navbar bg-body-tertiary py-3">
+            <div class="container-fluid bg-white">
 
-            <!-- logo -->
+                <!-- logo -->
+                    <a class="navbar-brand" href="#">
+                    <img src="./assets/img/mobile-logo.png" alt="Logo" width="40px" class="d-inline-block d-lg-none">
+                    </a>
                 <a class="navbar-brand" href="#">
-                  <img src="./assets/img/mobile-logo.png" alt="Logo" width="40px" class="d-inline-block d-lg-none">
+                    <img src="./assets/img/logo.svg" alt="Logo" width="180px" class="d-inline-block d-none d-lg-block ">
                 </a>
-              <a class="navbar-brand" href="#">
-                <img src="./assets/img/logo.svg" alt="Logo" width="180px" class="d-inline-block d-none d-lg-block ">
-              </a>
 
-          <!-- search -->
-          <div class="col flex-grow-1">
+            <!-- search -->
+            <div class="col flex-grow-1">
 
-              <div class="form-floating w-auto mx-4">
-                  <input type="email" class="form-control bg-secondary-subtle" id="floatingInput" placeholder="search">
-                  <label for="floatingInput">
-                      <i class="fa-solid fa-magnifying-glass fa-lg me-2"></i>
-                      Prova a cercare: Lezioni di Laravel
-                  </label>
-                </div>
-          </div>
+                <div class="form-floating w-auto mx-4">
+                    <input type="email" class="form-control bg-secondary-subtle" id="floatingInput" placeholder="search">
+                    <label for="floatingInput">
+                        <i class="fa-solid fa-magnifying-glass fa-lg me-2"></i>
+                        Prova a cercare: Lezioni di Laravel
+                    </label>
+                    </div>
+            </div>
 
-            <!-- function -->
-            <div class=" d-flex justify-content-end align-items-center">
+                <!-- function -->
+                <div class=" d-flex justify-content-end align-items-center">
 
-                <div class="eb_function d-inline-block d-none d-lg-block ">
-                    <a href="#" class="text-decoration-none text-secondary me-2">
-                        <i class="fa-solid fa-list-ul fa-xl"></i>
-                    </a>
-                    <a href="#" class="text-decoration-none text-secondary me-2">
-                        <i class="fa-solid fa-circle-question fa-xl"></i>
-                    </a>
-                    <a href="#" class="text-decoration-none text-secondary me-2">
-                        <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
-                    </a>
-                    
-                </div>
-    
+                    <div class="eb_function d-inline-block d-none d-lg-block ">
+                        <a href="#" class="text-decoration-none text-secondary me-2">
+                            <i class="fa-solid fa-list-ul fa-xl"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none text-secondary me-2">
+                            <i class="fa-solid fa-circle-question fa-xl"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none text-secondary me-2">
+                            <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+                        </a>
+                        
+                    </div>
+        
                     <!-- off canvas!!!!! -->
                     <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                         <i class="fa-solid fa-bell fa-xl text-warning"></i>
                     </button>
-    
+                    
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+
+                        <div class="offcanvas-body">
+                            <form class="container-fluid">
+                                <div class="row justify-content-start">
+
+                                    <!-- nome -->
+                                        <div class="mb-3 col-md-6">
+                                            <label for="name" class="form-label">Nome</label>
+                                            <input type="text" class="form-control" id="exampleInputPassword1">
+                                        </div>
+
+                                        <!-- cognome -->
+                                        <div class="mb-3 col-md-6">
+                                            <label for="name" class="form-label">Cognome</label>
+                                            <input type="text" class="form-control" id="exampleInputPassword1">
+                                        </div>
+
+                                        <!-- email -->
+                                        <div class="mb-3 col-md-6">
+                                        <label for="name" class="form-label">Email</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" id="basic-addon1">@</span>
+                                                <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                            </div>
+                                        </div>
+
+                                        <!-- password -->
+                                        <div class=" mb-3 col-md-6">
+                                            <label for="password" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+
+                                        <!-- Indirizzo -->
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label">Indirizzo</label>
+                                            <input type="text" class="form-control" id="exampleInputPassword1">
+                                        </div>
+
+                                        <!-- Città -->
+                                        <div class="mb-3 col-md-6">
+                                            <label for="name" class="form-label">Città</label>
+                                            <input type="text" class="form-control" id="exampleInputPassword1">
+                                        </div>
+
+                                        <!-- stato -->
+                                        <div class="mb-3 col-md-4">
+                                            <label for="name" class="form-label">Stato</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Scegli...</option>
+                                                <option value="1">italia</option>
+                                                <option value="2">Germania</option>
+                                                <option value="3">Spagna</option>
+                                                </select>
+                                        </div>
+
+                                        <!-- cap -->
+                                        <div class="mb-3 col-md-2">
+                                            <label for="name" class="form-label">CAP</label>
+                                            <input type="text" class="form-control" id="exampleInputPassword1">
+                                        </div>
+
+                                        <!-- upload -->
+                                        <div class="col-12 mb-3">
+                                            <label for="name" class="form-label">Foto</label>
+                                            <div class="input-group mb-3">
+                                                <input type="file" class="form-control" id="inputGroupFile02">
+                                            </div>
+                                        </div>
+
+                                        <!-- checkbox -->
+                                        <div class="col-12 mb-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Seleziona per proseguire
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <!-- buttons -->
+                                        <div class="col-12">
+                                            <button type="button" class="btn btn-primary">Salva</button>
+                                            <button type="button" class="btn btn-warning">Svuota</button>
+                                        </div>
+
+                                </div>
+
+                            </form>
+                        </div>
                     </div>
-                    <div class="offcanvas-body">
-                        ...
-                    </div>
-                    </div>
-    
-            </div>
-
-
-
-
-
-
-
-        </div>
-      </nav>
-</header>
+                </div>
+        </nav>
+    </header>
 
 
 
