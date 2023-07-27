@@ -5,12 +5,15 @@
     background-image:url(../img/sidebar-bg.png);
 }
 
+.eb_h-89 {
+    height: 89vh;
+}
 
 
 @media screen and (min-width:991px) {
 
     .eb_sidebar-lg {
-        width: 9.5rem;
+        min-width: 9.5rem;
     }
     
     .eb_w-40-lg{
