@@ -1,0 +1,19 @@
+.eb_sidebar {
+    width: 4.5rem;
+    height: calc(100vh - 90px);
+    background-color: #051e34;
+    background-image:url(../img/sidebar-bg.png);
+}
+
+
+@media screen and (min-width:991px) {
+
+    .eb_sidebar-lg {
+        width: 9.5rem;
+    }
+    
+    .eb_w-40-lg{
+        width: 40% !important;
+    }
+    
+}

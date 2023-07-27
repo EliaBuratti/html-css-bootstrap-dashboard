@@ -64,7 +64,7 @@
                         <i class="fa-solid fa-bell fa-xl text-warning"></i>
                     </button>
                     
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas offcanvas-end w-100 eb_w-40-lg" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                         
                         <div class="offcanvas-header">
                             <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
@@ -77,19 +77,19 @@
 
                                     <!-- nome -->
                                         <div class="mb-3 col-md-6">
-                                            <label for="name" class="form-label">Nome</label>
-                                            <input type="text" class="form-control" id="exampleInputPassword1">
+                                            <label for="floatingInput" class="form-label">Nome</label>
+                                            <input type="text" class="form-control" id="Name">
                                         </div>
 
                                         <!-- cognome -->
                                         <div class="mb-3 col-md-6">
-                                            <label for="name" class="form-label">Cognome</label>
-                                            <input type="text" class="form-control" id="exampleInputPassword1">
+                                            <label for="floatingInput" class="form-label">Cognome</label>
+                                            <input type="text" class="form-control" id="Surname1">
                                         </div>
 
                                         <!-- email -->
                                         <div class="mb-3 col-md-6">
-                                        <label for="name" class="form-label">Email</label>
+                                        <label for="floatingInput" class="form-label">Email</label>
                                             <div class="input-group">
                                                 <span class="input-group-text" id="basic-addon1">@</span>
                                                 <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
@@ -98,25 +98,25 @@
 
                                         <!-- password -->
                                         <div class=" mb-3 col-md-6">
-                                            <label for="password" class="form-label">Password</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                            <label for="floatingInput" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="Password">
                                         </div>
 
                                         <!-- Indirizzo -->
                                         <div class="mb-3">
-                                            <label for="name" class="form-label">Indirizzo</label>
-                                            <input type="text" class="form-control" id="exampleInputPassword1">
+                                            <label for="floatingInput" class="form-label">Indirizzo</label>
+                                            <input type="text" class="form-control" id="addrss">
                                         </div>
 
                                         <!-- Città -->
                                         <div class="mb-3 col-md-6">
-                                            <label for="name" class="form-label">Città</label>
-                                            <input type="text" class="form-control" id="exampleInputPassword1">
+                                            <label for="floatingInput" class="form-label">Città</label>
+                                            <input type="text" class="form-control" id="city">
                                         </div>
 
                                         <!-- stato -->
                                         <div class="mb-3 col-md-4">
-                                            <label for="name" class="form-label">Stato</label>
+                                            <label for="floatingInput" class="form-label">Stato</label>
                                             <select class="form-select" aria-label="Default select example">
                                                 <option selected>Scegli...</option>
                                                 <option value="1">italia</option>
@@ -127,13 +127,13 @@
 
                                         <!-- cap -->
                                         <div class="mb-3 col-md-2">
-                                            <label for="name" class="form-label">CAP</label>
+                                            <label for="floatingInput" class="form-label">CAP</label>
                                             <input type="text" class="form-control" id="exampleInputPassword1">
                                         </div>
 
                                         <!-- upload -->
                                         <div class="col-12 mb-3">
-                                            <label for="name" class="form-label">Foto</label>
+                                            <label for="floatingInput" class="form-label">Foto</label>
                                             <div class="input-group mb-3">
                                                 <input type="file" class="form-control" id="inputGroupFile02">
                                             </div>
@@ -163,6 +163,44 @@
                 </div>
         </nav>
     </header>
+
+    <main id="site_main">
+
+        <div class="eb_sidebar eb_sidebar-lg p-2">
+            <div class="d-flex flex-column justify-content-between p-3 h-100">
+
+                <div class="eb_head">
+
+                    <a href="#" class="text-decoration-none text-white ">
+                        <i class="fa-solid fa-house fa-fw fs-4 me-2 my-3"></i>
+                        <span class="d-none d-lg-inline-block" >Home</span>
+                    </a>
+                    
+                    <a href="#" class="text-decoration-none text-white ">
+                        <i class="fa-solid fa-chart-simple fa-fw fs-4 me-2 my-3"></i>
+                        <span class="d-none d-lg-inline-block ">Stats</span>
+                    </a>
+    
+                    <a href="#" class="text-decoration-none text-white ">
+                        <i class="fa-solid fa-signal fa-fw fs-4 me-2 my-3"></i>
+                        <span class="d-none d-lg-inline-block">Signals</span>
+                    </a>
+                </div>
+    
+                
+                <div class="eb_footer mb-3">
+
+                    <a href="#" class="text-decoration-none text-white">
+                        <i class="fa-solid fa-gear fa-fw fs-4 me-2"></i>
+                        <span class="d-none d-lg-inline-block">Admin</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
 
 
 
