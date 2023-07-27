@@ -55,150 +55,207 @@
                         </a>
                         <a href="#" class="text-decoration-none text-secondary me-2">
                             <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
-                        </a>
-                        
+                        </a> 
                     </div>
-        
-                    <!-- off canvas!!!!! -->
-                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                        <i class="fa-solid fa-bell fa-xl text-warning"></i>
-                    </button>
-                    
-                    <div class="offcanvas offcanvas-end w-100 eb_w-40-lg" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                        
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
 
-                        <div class="offcanvas-body">
-                            <form class="container-fluid">
-                                <div class="row justify-content-start">
+                    <div class="btn-group">
+                        <button type="button" class="btn border-0" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell fa-xl text-warning"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end me-3">
+                          <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          <li><a class="dropdown-item" href="#">Menu item</a></li>
+                        </ul>
+                      </div>
 
-                                    <!-- nome -->
-                                        <div class="mb-3 col-md-6">
-                                            <label for="floatingInput" class="form-label">Nome</label>
-                                            <input type="text" class="form-control" id="Name">
-                                        </div>
-
-                                        <!-- cognome -->
-                                        <div class="mb-3 col-md-6">
-                                            <label for="floatingInput" class="form-label">Cognome</label>
-                                            <input type="text" class="form-control" id="Surname1">
-                                        </div>
-
-                                        <!-- email -->
-                                        <div class="mb-3 col-md-6">
-                                        <label for="floatingInput" class="form-label">Email</label>
-                                            <div class="input-group">
-                                                <span class="input-group-text" id="basic-addon1">@</span>
-                                                <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-                                            </div>
-                                        </div>
-
-                                        <!-- password -->
-                                        <div class=" mb-3 col-md-6">
-                                            <label for="floatingInput" class="form-label">Password</label>
-                                            <input type="password" class="form-control" id="Password">
-                                        </div>
-
-                                        <!-- Indirizzo -->
-                                        <div class="mb-3">
-                                            <label for="floatingInput" class="form-label">Indirizzo</label>
-                                            <input type="text" class="form-control" id="addrss">
-                                        </div>
-
-                                        <!-- Città -->
-                                        <div class="mb-3 col-md-6">
-                                            <label for="floatingInput" class="form-label">Città</label>
-                                            <input type="text" class="form-control" id="city">
-                                        </div>
-
-                                        <!-- stato -->
-                                        <div class="mb-3 col-md-4">
-                                            <label for="floatingInput" class="form-label">Stato</label>
-                                            <select class="form-select" aria-label="Default select example">
-                                                <option selected>Scegli...</option>
-                                                <option value="1">italia</option>
-                                                <option value="2">Germania</option>
-                                                <option value="3">Spagna</option>
-                                                </select>
-                                        </div>
-
-                                        <!-- cap -->
-                                        <div class="mb-3 col-md-2">
-                                            <label for="floatingInput" class="form-label">CAP</label>
-                                            <input type="text" class="form-control" id="exampleInputPassword1">
-                                        </div>
-
-                                        <!-- upload -->
-                                        <div class="col-12 mb-3">
-                                            <label for="floatingInput" class="form-label">Foto</label>
-                                            <div class="input-group mb-3">
-                                                <input type="file" class="form-control" id="inputGroupFile02">
-                                            </div>
-                                        </div>
-
-                                        <!-- checkbox -->
-                                        <div class="col-12 mb-3">
-                                            <div class="form-check">
-                                                <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                Seleziona per proseguire
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <!-- buttons -->
-                                        <div class="col-12">
-                                            <button type="button" class="btn btn-primary">Salva</button>
-                                            <button type="button" class="btn btn-warning">Svuota</button>
-                                        </div>
-
-                                </div>
-
-                            </form>
-                        </div>
-                    </div>
                 </div>
         </nav>
     </header>
 
     <main id="site_main">
+        <div class="d-flex">
 
-        <div class="eb_sidebar eb_sidebar-lg p-2">
-            <div class="d-flex flex-column justify-content-between p-3 h-100">
-
-                <div class="eb_head">
-
-                    <a href="#" class="text-decoration-none text-white ">
-                        <i class="fa-solid fa-house fa-fw fs-4 me-2 my-3"></i>
-                        <span class="d-none d-lg-inline-block" >Home</span>
-                    </a>
+            <!-- sidebar -->
+            <div class="eb_sidebar eb_sidebar-lg p-2">
+                <div class="d-flex flex-column justify-content-between p-3 h-100">
+    
+                    <div class="eb_head">
+    
+                        <a href="#" class="text-decoration-none text-white ">
+                            <i class="fa-solid fa-house fa-fw fs-4 me-2 my-3"></i>
+                            <span class="d-none d-lg-inline-block" >Home</span>
+                        </a>
+                        
+                        <a href="#" class="text-decoration-none text-white ">
+                            <i class="fa-solid fa-chart-simple fa-fw fs-4 me-2 my-3"></i>
+                            <span class="d-none d-lg-inline-block ">Stats</span>
+                        </a>
+        
+                        <a href="#" class="text-decoration-none text-white ">
+                            <i class="fa-solid fa-signal fa-fw fs-4 me-2 my-3"></i>
+                            <span class="d-none d-lg-inline-block">Signals</span>
+                        </a>
+                    </div>
+        
                     
-                    <a href="#" class="text-decoration-none text-white ">
-                        <i class="fa-solid fa-chart-simple fa-fw fs-4 me-2 my-3"></i>
-                        <span class="d-none d-lg-inline-block ">Stats</span>
-                    </a>
+                    <div class="eb_footer mb-3">
     
-                    <a href="#" class="text-decoration-none text-white ">
-                        <i class="fa-solid fa-signal fa-fw fs-4 me-2 my-3"></i>
-                        <span class="d-none d-lg-inline-block">Signals</span>
-                    </a>
+                        <a href="#" class="text-decoration-none text-white">
+                            <i class="fa-solid fa-gear fa-fw fs-4 me-2"></i>
+                            <span class="d-none d-lg-inline-block">Admin</span>
+                        </a>
+                    </div>
+    
                 </div>
     
-                
-                <div class="eb_footer mb-3">
-
-                    <a href="#" class="text-decoration-none text-white">
-                        <i class="fa-solid fa-gear fa-fw fs-4 me-2"></i>
-                        <span class="d-none d-lg-inline-block">Admin</span>
-                    </a>
-                </div>
-
             </div>
 
+            <!-- head dashboard -->
+            <div class="w-100">
+                <div class="overflow-auto d-flex px-3 py-4 bg-primary flex-wrap justify-content-between">
+    
+                    <!-- new studente -->
+                    <div class="col-12 order-1 col-md-3 order-md-3 text-white pt-4">
+                        <span class="me-3">Nuovo Studente</span>
+    
+                        <!-- off canvas!!!!! -->
+                        <button class="btn border-2 border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="fa-solid fa-plus fa-fw text-white"></i>
+                        </button>
+                        
+                        <div class="offcanvas offcanvas-end w-100 eb_w-40-lg" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+    
+                            <div class="offcanvas-body">
+                                <form class="container-fluid">
+                                    <div class="row justify-content-start">
+    
+                                        <!-- nome -->
+                                            <div class="mb-3 col-md-6">
+                                                <label for="floatingInput" class="form-label">Nome</label>
+                                                <input type="text" class="form-control" id="Name">
+                                            </div>
+    
+                                            <!-- cognome -->
+                                            <div class="mb-3 col-md-6">
+                                                <label for="floatingInput" class="form-label">Cognome</label>
+                                                <input type="text" class="form-control" id="Surname1">
+                                            </div>
+    
+                                            <!-- email -->
+                                            <div class="mb-3 col-md-6">
+                                            <label for="floatingInput" class="form-label">Email</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                                    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                            </div>
+    
+                                            <!-- password -->
+                                            <div class=" mb-3 col-md-6">
+                                                <label for="floatingInput" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="Password">
+                                            </div>
+    
+                                            <!-- Indirizzo -->
+                                            <div class="mb-3">
+                                                <label for="floatingInput" class="form-label">Indirizzo</label>
+                                                <input type="text" class="form-control" id="addrss">
+                                            </div>
+    
+                                            <!-- Città -->
+                                            <div class="mb-3 col-md-6">
+                                                <label for="floatingInput" class="form-label">Città</label>
+                                                <input type="text" class="form-control" id="city">
+                                            </div>
+    
+                                            <!-- stato -->
+                                            <div class="mb-3 col-md-4">
+                                                <label for="floatingInput" class="form-label">Stato</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Scegli...</option>
+                                                    <option value="1">italia</option>
+                                                    <option value="2">Germania</option>
+                                                    <option value="3">Spagna</option>
+                                                    </select>
+                                            </div>
+    
+                                            <!-- cap -->
+                                            <div class="mb-3 col-md-2">
+                                                <label for="floatingInput" class="form-label">CAP</label>
+                                                <input type="text" class="form-control" id="exampleInputPassword1">
+                                            </div>
+    
+                                            <!-- upload -->
+                                            <div class="col-12 mb-3">
+                                                <label for="floatingInput" class="form-label">Foto</label>
+                                                <div class="input-group mb-3">
+                                                    <input type="file" class="form-control" id="inputGroupFile02">
+                                                </div>
+                                            </div>
+    
+                                            <!-- checkbox -->
+                                            <div class="col-12 mb-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                    Seleziona per proseguire
+                                                    </label>
+                                                </div>
+                                            </div>
+    
+                                            <!-- buttons -->
+                                            <div class="col-12">
+                                                <button type="button" class="btn btn-primary">Salva</button>
+                                                <button type="button" class="btn btn-warning">Svuota</button>
+                                            </div>
+    
+                                    </div>
+    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- badge -->
+                    <div class="col-12 order-2 col-md-6 order-md-1 text-white">
+                        <span class="fs-1">Boolean</span>
+                        <span class="badge bg-secondary bg-opacity-75 rounded-4">Piano Blaze</span>
+    
+                        <div class="eb_badges">
+                            <span class="badge bg-secondary bg-opacity-75 rounded-4">3 app</span>
+                            <a href="#" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-chevron-right fa-fw"></i>
+                            </a>
+                            <span class="badge bg-secondary bg-opacity-75 rounded-4">+</span>
+                            <span class="d-none d-lg-inline">
+                                <span class="badge bg-secondary bg-opacity-75 rounded-4">Boolean mobile app</span>
+                                <span class="badge bg-secondary bg-opacity-75 rounded-4">Boolean web app</span>
+                                <span class="badge bg-secondary bg-opacity-75 rounded-4">boolean blog app</span>
+                            </span>
+                        </div>
+                    </div>
+    
+                    <!-- online student  -->
+                    <div class="col-12 order-3 col-md-3 order-md-2 text-white">
+                        <span> Studenti online negli ultimi 30 minuti </span>
+                        <span class="fs-1 d-block">125</span>
+                        
+    
+    
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
+
 
     </main>
 
