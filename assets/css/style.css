@@ -14,6 +14,27 @@
 }
 
 
+/* hover effects */
+
+.eb_sidebar a:hover {
+    background-color: rgba(169, 169, 169, 0.7);
+}
+
+.eb_sidebar a {
+    transition: all 0.3s;
+}
+
+.eb_offcanvas:hover {
+    background-color: white;
+}
+
+.eb_offcanvas:hover i {
+    color: black!important;
+}
+
+
+/* media utilities */
+
 @media screen and (min-width:991px) {
 
     .eb_sidebar-lg {
