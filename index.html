@@ -115,11 +115,11 @@
             <div class="w-100 overflow-auto eb_h-89">
                 <div class=" d-flex px-3 py-4 bg-primary flex-wrap justify-content-between">
     
-                    <!-- new studente -->
+                    <!-- new students -->
                     <div class="col-12 order-1 col-md-3 order-md-3 text-white pt-4 text-md-end">
                         <span class="me-3">Nuovo Studente</span>
     
-                        <!-- off canvas!!!!! -->
+                        <!-- off canvas -->
                         <button class="btn border-2 border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                             <i class="fa-solid fa-plus fa-fw text-white"></i>
                         </button>
@@ -133,7 +133,7 @@
     
                             <div class="offcanvas-body">
                                 <form class="container-fluid">
-                                    <div class="row justify-content-start">
+                                    <div class="row text-start">
     
                                         <!-- nome -->
                                             <div class="mb-3 col-md-6">
@@ -212,7 +212,7 @@
                                             <!-- buttons -->
                                             <div class="col-12">
                                                 <button type="button" class="btn btn-primary">Salva</button>
-                                                <button type="button" class="btn btn-warning">Svuota</button>
+                                                <button type="reset" class="btn btn-warning">Svuota</button>
                                             </div>
     
                                     </div>
@@ -247,236 +247,344 @@
                         <span class="fs-1 d-block">125</span>
                     </div>
                 </div>
+                
+                <!-- table -->
+                <div class="col-12 px-3">
 
-            <div class="container-fluid">
+                    <div class="card my-4">
+                        <div class="card-header">
+                            <span class="fs-3"> Prossime classi</span> 
+                        </div>
+                    <div class="card-body">
 
-                <div class="card my-4">
-                    <div class="card-header">
-                        <span class="fs-3"> Prossime classi</span> 
+                        <!-- manca da eliminare la data inizio e il ROI quando stringo allo scatto md -->
+
+                        <table class="table table-hover fw-medium text-center">
+                            <thead>
+                            <tr>
+                                <th scope="col" class="col-7 text-start">Nome</th>
+                                <th scope="col" class="col-1" >Data inizio</th>
+                                <th scope="col" class="col-1" >ROI</th>
+                                <th scope="col" class="col-1 text-center" >Stato</th>
+                                <th scope="col" class="col-1" >Azioni</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            <tr>
+                                <td scope="row" class="text-start" >
+                                    <img src="./assets/img/class-avatar.jpg" style="width:40px;" class="me-2" alt="logo">
+                                    Classe 104                               
+                                </td>
+                                <td>15 feb 2023</td>
+                                <td>20%</td>
+                                <td>
+                                    <span class="badge bg-success">Done</span>
+                                </td>
+
+                                <td>
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td scope="row" class="text-start"  >
+                                    <img src="./assets/img/class-avatar.jpg" style="width:40px;" class="me-2" alt="logo">
+                                    Classe 104                               
+                                </td>
+                                <td>15 feb 2023</td>
+                                <td>20%</td>
+                                <td>
+                                    <span class="badge bg-success">Done</span>
+                                </td>
+
+                                <td>
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td scope="row" class="text-start" >
+                                    <img src="./assets/img/class-avatar.jpg" style="width:40px;" class="me-2" alt="logo">
+                                    Classe 104                               
+                                </td>
+                                <td>15 feb 2023</td>
+                                <td>20%</td>
+                                <td>
+                                    <span class="badge bg-warning">Process</span>
+                                </td>
+
+                                <td>
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td scope="row" class="text-start" >
+                                    <img src="./assets/img/class-avatar.jpg" style="width:40px;" class="me-2" alt="logo">
+                                    Classe 104                               
+                                </td>
+                                <td>15 feb 2023</td>
+                                <td>20%</td>
+                                <td>
+                                    <span class="badge bg-success">Done</span>
+                                </td>
+
+                                <td>
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td scope="row" class="text-start" >
+                                    <img src="./assets/img/class-avatar.jpg" style="width:40px;" class="me-2" alt="logo">
+                                    Classe 104                               
+                                </td>
+                                <td>15 feb 2023</td>
+                                <td>20%</td>
+                                <td>
+                                    <span class="badge bg-danger">Failed</span>
+                                </td>
+
+                                <td>
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td scope="row" class="text-start" >
+                                    <img src="./assets/img/class-avatar.jpg" style="width:40px;" class="me-2" alt="logo">
+                                    Classe 104                               
+                                </td>
+                                <td>15 feb 2023</td>
+                                <td>20%</td>
+                                <td>
+                                    <span class="badge bg-success">Done</span>
+                                </td>
+
+                                <td>
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td scope="row" class="text-start" >
+                                    <img src="./assets/img/class-avatar.jpg" style="width:40px;" class="me-2" alt="logo">
+                                    Classe 104                               
+                                </td>
+                                <td>15 feb 2023</td>
+                                <td>20%</td>
+                                <td>
+                                    <span class="badge bg-danger">Failed</span>
+                                </td>
+
+                                <td>
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td scope="row" class="text-start" >
+                                    <img src="./assets/img/class-avatar.jpg" style="width:40px;" class="me-2" alt="logo">
+                                    Classe 104                               
+                                </td>
+                                <td>15 feb 2023</td>
+                                <td>20%</td>
+                                <td>
+                                    <span class="badge bg-success">Done</span>
+                                </td>
+
+                                <td>
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+
+
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+
                     </div>
-                <div class="card-body">
+                </div>  
+                </div> 
 
-                    <!-- manca da eliminare la data inizio e il ROI quando stringo allo scatto md -->
-
-                    <table class="table table-hover fw-medium text-center">
-                        <thead>
-                          <tr>
-                            <th scope="col" class="col-7 text-start">Nome</th>
-                            <th scope="col" class="col-1" >Data inizio</th>
-                            <th scope="col" class="col-1" >ROI</th>
-                            <th scope="col" class="col-1 text-center" >Stato</th>
-                            <th scope="col" class="col-1" >Azioni</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-
-                          <tr>
-                            <td scope="row" class="text-start" >
-                                <img src="./assets/img/class-avatar.jpg" style="width:40px;" class="me-2" alt="logo">
-                                Classe 104                               
-                            </td>
-                            <td>15 feb 2023</td>
-                            <td>20%</td>
-                            <td>
-                                <span class="badge bg-success">Done</span>
-                            </td>
-
-                            <td>
-                                <button type="button" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-pen"></i>
+                <!-- F.A.Q. -->
+                <div class="col-12 px-3">
+                    <div class="card my-4">
+                        <div class="card-header">
+                            <span class="fs-3"> F.A.Q.</span> 
+                        </div>
+                    <div class="card-body">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Accordion Item #2
                                 </button>
-
-                                <button type="button" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-trash"></i>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Accordion Item #2
                                 </button>
-
-
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td scope="row" class="text-start"  >
-                                <img src="./assets/img/class-avatar.jpg" style="width:40px;" class="me-2" alt="logo">
-                                Classe 104                               
-                            </td>
-                            <td>15 feb 2023</td>
-                            <td>20%</td>
-                            <td>
-                                <span class="badge bg-success">Done</span>
-                            </td>
-
-                            <td>
-                                <button type="button" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-pen"></i>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Accordion Item #3
                                 </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                                <button type="button" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-trash"></i>
-                                </button>
-
-
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td scope="row" class="text-start" >
-                                <img src="./assets/img/class-avatar.jpg" style="width:40px;" class="me-2" alt="logo">
-                                Classe 104                               
-                            </td>
-                            <td>15 feb 2023</td>
-                            <td>20%</td>
-                            <td>
-                                <span class="badge bg-warning">Process</span>
-                            </td>
-
-                            <td>
-                                <button type="button" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-pen"></i>
-                                </button>
-
-                                <button type="button" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-trash"></i>
-                                </button>
-
-
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td scope="row" class="text-start" >
-                                <img src="./assets/img/class-avatar.jpg" style="width:40px;" class="me-2" alt="logo">
-                                Classe 104                               
-                            </td>
-                            <td>15 feb 2023</td>
-                            <td>20%</td>
-                            <td>
-                                <span class="badge bg-success">Done</span>
-                            </td>
-
-                            <td>
-                                <button type="button" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-pen"></i>
-                                </button>
-
-                                <button type="button" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-trash"></i>
-                                </button>
-
-
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td scope="row" class="text-start" >
-                                <img src="./assets/img/class-avatar.jpg" style="width:40px;" class="me-2" alt="logo">
-                                Classe 104                               
-                            </td>
-                            <td>15 feb 2023</td>
-                            <td>20%</td>
-                            <td>
-                                <span class="badge bg-danger">Failed</span>
-                            </td>
-
-                            <td>
-                                <button type="button" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-pen"></i>
-                                </button>
-
-                                <button type="button" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-trash"></i>
-                                </button>
-
-
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td scope="row" class="text-start" >
-                                <img src="./assets/img/class-avatar.jpg" style="width:40px;" class="me-2" alt="logo">
-                                Classe 104                               
-                            </td>
-                            <td>15 feb 2023</td>
-                            <td>20%</td>
-                            <td>
-                                <span class="badge bg-success">Done</span>
-                            </td>
-
-                            <td>
-                                <button type="button" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-pen"></i>
-                                </button>
-
-                                <button type="button" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-trash"></i>
-                                </button>
-
-
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td scope="row" class="text-start" >
-                                <img src="./assets/img/class-avatar.jpg" style="width:40px;" class="me-2" alt="logo">
-                                Classe 104                               
-                            </td>
-                            <td>15 feb 2023</td>
-                            <td>20%</td>
-                            <td>
-                                <span class="badge bg-danger">Failed</span>
-                            </td>
-
-                            <td>
-                                <button type="button" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-pen"></i>
-                                </button>
-
-                                <button type="button" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-trash"></i>
-                                </button>
-
-
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td scope="row" class="text-start" >
-                                <img src="./assets/img/class-avatar.jpg" style="width:40px;" class="me-2" alt="logo">
-                                Classe 104                               
-                            </td>
-                            <td>15 feb 2023</td>
-                            <td>20%</td>
-                            <td>
-                                <span class="badge bg-success">Done</span>
-                            </td>
-
-                            <td>
-                                <button type="button" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-pen"></i>
-                                </button>
-
-                                <button type="button" class="btn btn-outline-secondary">
-                                    <i class="fa-solid fa-trash"></i>
-                                </button>
-
-
-                            </td>
-                          </tr>
-
-                        </tbody>
-                      </table>
 
                 </div>
-            </div>  
-            </div> 
+
+                <!-- Checkbox -->
+                <div class="col-12 px-3">
+                    <div class="card my-4">
+                        <div class="card-header">
+                            <span class="fs-3"> Prossime classi</span> 
+                        </div>
+                    <div class="card-body">
+                        <div class="card w-100" style="width: 18rem;">
+                            <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="todo" value="todo" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    Default checkbox
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="todo" value="todo" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    Default checkbox
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="todo" value="todo" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    Default checkbox
+                                    </label>
+                                </div>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
 
+
+
+                </div>
+
+                <!-- stats -->
+                <div class="col-12 px-3">
+                    <div class="card w-100" style="width: 18rem;">
+                        <img src="./assets/img/stats.jpeg" class="card-img-top" alt="stats">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-
-
         </div>
-
 
     </main>
 
