@@ -9,11 +9,6 @@
     height: 89vh;
 }
 
-.eb_fit-cont {
-    height: fit-content;
-}
-
-
 /* hover effects */
 
 .eb_sidebar a:hover {
@@ -43,23 +38,6 @@
     
     .eb_w-40-lg{
         width: 40% !important;
-    }
-    
-}
-
-@media screen and (min-width:1200px) {
-
-    .eb_rel-xl {
-        position: relative;
-    }
-
-    .eb_abs-xl {
-        position: absolute;
-    }
-
-    .eb_te-xl {
-        top: 17.5rem;
-        right: 0;
     }
     
 }
